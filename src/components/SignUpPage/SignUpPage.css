@@ -26,3 +26,9 @@
     height:23vh;
     width:12vw;
   }
+  #form{
+    padding:2vh 3vw 2vh 3vw;
+    background-color:#eceef1;
+    margin:0;
+    border-radius:2%
+  }

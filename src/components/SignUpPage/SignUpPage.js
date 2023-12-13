@@ -2,13 +2,11 @@ import React,{useState,useRef,useEffect} from 'react';
 import './SignUpPage.css';
 import brnLogo from '../images/brnLogo.png';
 import axios from 'axios';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import states from './states';
-import Card from 'react-bootstrap/Card';
+import {Form,Button,Card} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
+import { states } from '../constants';
 
-
+ 
 const SignUpPage = () => {
 
   useEffect(() => {
@@ -26,7 +24,6 @@ const SignUpPage = () => {
   let stateRef=useRef();
   let navigate=useNavigate();
   let [image,setImage]=useState(null);
-
   let onImageChange=()=>{
     if(profilePicRef.current.files && profilePicRef.current.files[0]){
       setImage(URL.createObjectURL(profilePicRef.current.files[0])); }
@@ -53,18 +50,18 @@ const SignUpPage = () => {
   }
   return (
     <div className='container'>
-      <div>
+      <div className="pulse-logo-style">
       <img src={brnLogo} alt="logo" className='logo'/>
       </div>
       <div className="form-container"> 
       <Form id="form">
-      <div className="form-heading">Sign Up</div>
-      <Form.Text style={{position:'relative',top:'2vh'}}>
+      <div className="form-heading" style={{textAlign:'center'}}>Sign Up</div>
+      <Form.Text style={{position:'relative',top:'2vh',left:'1vw'}}>
         Enter your name as per educational certificates
       </Form.Text>
       <Form.Group className=" form-label mb-3">
         <Form.Control className="my-3"  ref={nameRef}type="text" placeholder="Name as per certificate" />
-        <Form.Select className="my-3" ref={genderRef}>
+        <Form.Select  className="my-3" ref={genderRef}>
           <option disabled>Gender</option>
           <option >MALE</option>
           <option >FEMALE</option>
@@ -84,9 +81,9 @@ const SignUpPage = () => {
         <Form.Control className="my-3"  ref={cityRef}type="text" placeholder="City/Town" />
         <Form.Select className="my-3" ref={stateRef} >
         <option value=''>State</option>
-            {states.map((state)=>{
+            {states.map((state,index)=>{
             return(
-               <option >{state}</option>
+               <option key={index}>{state}</option>
             )
             })}
           </Form.Select>

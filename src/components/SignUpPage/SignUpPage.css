@@ -1,34 +1,47 @@
-.logo{
-    background-color:#333333;
-    height:25vh;
-    width:30vh;
-  }
-  .container{
-      margin-top:2vh;
-      border-radius: 12px;
-  }
-  .form-container{
-      display:flex;
-      justify-content: center;
-      padding:2vh;
-      margin-top:0;
-  }
-  .form-heading{
-      color:#4db3a5;
-      font-size:2vw;
-      margin:2vh 2vw 2vh 2vw;
-  }
-  .form-label{
-      padding:0px;
-      width:25vw;
-  }
-  #user-image{
-    height:23vh;
-    width:12vw;
-  }
-  #form{
-    padding:2vh 3vw 2vh 3vw;
-    background-color:#eceef1;
-    margin:0;
-    border-radius:2%
-  }
+.logo {
+  background-color: #333333;
+  height: 25vh;
+  width: 30vh;
+}
+
+.container {
+  margin-top: 2vh;
+  border-radius: 12px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  margin-top: 0;
+}
+
+.form-heading {
+  color: #4db3a5;
+  font-size: 2vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+.form-label {
+  padding: 0px;
+  width: 25vw;
+}
+
+#user-image {
+  height: 23vh;
+  width: 12vw;
+}
+
+#form {
+  padding: 2vh 3vw 2vh 3vw;
+  background-color: #eceef1;
+  margin: 0;
+  border-radius: 2%
+}
+
+.pulse-logo-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

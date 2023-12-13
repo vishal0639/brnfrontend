@@ -1,4 +1,60 @@
-.App {
-  text-align: center;
+.badge-style {
+  height: 2.3vw;
+  width: 99%;
+  margin: 0 0.5vw 0 0.5vw;
 }
 
+.badge-text-style {
+  text-align: left;
+  font-size: 130%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: '20%';
+  padding: -0.5% 0 -1% 1%;
+}
+
+#developer-logo {
+  border: 1px solid black;
+  height: 25vw;
+  width: 25vw;
+  margin: 0.1vw 0vw 2vw 0vw;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3);
+}
+
+#accord-style {
+  border-radius: 30%;
+}
+
+#dsa-form {
+  display: inline-block;
+  width: 96%;
+  border-radius: 1%;
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  padding: 1%;
+}
+
+#dsa-form-label {
+  width: 25%;
+  font-size: 100%;
+  text-align: left;
+  font-weight: 350;
+  padding: 0.5vh 0 0 6%;
+}
+
+#dsaForm-heading {
+  font-size: 140%;
+  font-weight: 400;
+  padding: 0 0 0 1.4%;
+}
+
+#task-heading {
+  font-size: 140%;
+  font-weight: 400;
+  padding: 0.2% 0 0 1.4%;
+  height: 1%;
+}
+
+#task-box {
+  width: 98%;
+  margin: 2% 1% 1% 1%;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
